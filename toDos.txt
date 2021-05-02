@@ -1,0 +1,15 @@
+[ ] Look for Size Integer (size_t)
+[ ] Find out why can't you pass arrays by value
+[ ] Find out what is null character and why appears in strings
+[ ] Variable length string input 
+
+---------------------------------
+Resources:
+GeeksForGeeks full C guide: https://www.geeksforgeeks.org/c-programming-language/?ref=ghm
+https://www.geeksforgeeks.org/c-language-set-1-introduction/
+https://www.geeksforgeeks.org/c-programming-language-standard/
+https://www.geeksforgeeks.org/int-1-sign-bit-31-data-bits-keyword-in-c/
+https://www.tutorialspoint.com/difference-between-c-and-cplusplus#:~:text=As%20we%20know%20both%20C,and%20object%2Doriented%20programming%20languages.
+https://www.youtube.com/watch?v=2HasEQe5VR0
+https://stackoverflow.com/questions/16870485/how-can-i-read-an-input-string-of-unknown-length
+https://www.programiz.com/c-programming/c-strings

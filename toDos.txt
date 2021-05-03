@@ -1,8 +1,8 @@
-[ ] Look for Size Integer (size_t)
-[ ] Find out why can't you pass arrays by value
-[ ] Find out what is null character and why appears in strings
+[X] Look for Size Integer (size_t)
+[X] Find out why can't you pass arrays by value
+[/] Find out what is null character and why appears in strings
 [ ] Variable length string input 
-
+[ ] Char array vs Char pointer: https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/
 ---------------------------------
 Resources:
 GeeksForGeeks full C guide: https://www.geeksforgeeks.org/c-programming-language/?ref=ghm

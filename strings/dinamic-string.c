@@ -11,16 +11,10 @@ size_t intArSize(int * pInt) {
 
     printf("The value of the pointer + 1: %d\n", *(pInt + 1));
 
-    /*while(*pInt) {*/
-        /*printf("- %d\n", *pInt);*/
-        /*pInt++;*/
-    /*}*/
-    /*printf("The difference between them %ld\n", (pInt + 1) - pInt);*/
-
     return 0;
 }
-// Official strcat (from https://www.joelonsoftware.com/2001/12/11/back-to-basics/)
 
+// Official strcat (from https://www.joelonsoftware.com/2001/12/11/back-to-basics/)
 void mystrcat2( char* dest, char* src )
 {
     while (*dest) dest++;

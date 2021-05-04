@@ -1,8 +1,9 @@
 [X] Look for Size Integer (size_t)
 [X] Find out why can't you pass arrays by value
-[/] Find out what is null character and why appears in strings
+[X] Find out what is null character and why appears in strings
+[X] Char array vs Char pointer: https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/
 [ ] Variable length string input 
-[ ] Char array vs Char pointer: https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/
+[ ] Dinamic memory allocaion with malloc: https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
 ---------------------------------
 Resources:
 GeeksForGeeks full C guide: https://www.geeksforgeeks.org/c-programming-language/?ref=ghm

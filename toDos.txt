@@ -2,9 +2,10 @@
 [X] Find out why can't you pass arrays by value
 [X] Find out what is null character and why appears in strings
 [X] Char array vs Char pointer: https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/
-[ ] Dinamic memory allocaion with malloc: https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
-[ ] Dinamic length array: https://www.geeksforgeeks.org/variable-length-arrays-in-c-and-c/ 
+[X] Dinamic memory allocaion with malloc: https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
+[X] Dinamic length array: https://www.geeksforgeeks.org/variable-length-arrays-in-c-and-c/ 
 [ ] Variable length string input 
+[ ] Stack vs Heap
 ---------------------------------
 Resources:
 GeeksForGeeks full C guide: https://www.geeksforgeeks.org/c-programming-language/?ref=ghm

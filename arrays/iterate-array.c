@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 #define SIZE (6)
 
@@ -19,15 +20,20 @@ int main() {
       printf("%u\t", arr2[i]);
     }
 
+    puts("");
+    int arr3[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    for (int  * i = arr3; i < &arr3[10]; i++) {
+        printf("%p\t", i);
+    }
 
-    /*puts("Array 3 with size");*/
-    /*int SIZE2 = 2;*/
-    /*int arr3[SIZE2] = { 1, 2 };*/
-    /*for (int i = 0;i < SIZE2 ; i++) {*/
-      /*printf("%u\t", arr3[i]);*/
-    /*}*/
+    puts("");
+
+    enum sizes { arr1 = 255 };
+    enum sizes a1Size = arr1;
+    char buf[a1Size + 1];
+
+    printf("%d", arr1);
 
 
-    fun(6);
 return 0;
 }

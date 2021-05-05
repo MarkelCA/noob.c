@@ -40,7 +40,7 @@ void print_memory_used (long int size_bytes)
 int main()
 {
 	// This pointer will hold the base address of the block created
-	long int  arr_length = 100000000; // A pretty big array
+	long int  arr_length = 1000000000; // A pretty big array
     long int size_bytes = arr_length * sizeof(int);
 
 	int* nums = create_array_pointer(arr_length);

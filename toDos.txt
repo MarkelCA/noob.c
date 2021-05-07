@@ -4,7 +4,9 @@
 [X] Char array vs Char pointer: https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/
 [X] Dinamic memory allocaion with malloc: https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
 [X] Dinamic length array: https://www.geeksforgeeks.org/variable-length-arrays-in-c-and-c/ 
-[ ] Memory Layout of C Program: https://www.geeksforgeeks.org/memory-layout-of-c-program/
+[X] Memory Layout of C Program: https://www.geeksforgeeks.org/memory-layout-of-c-program/
+[ ] Command line arguments validation and iteration
+[ ] Data Structures: https://www.geeksforgeeks.org/data-structures/
 [ ] Variable length string input 
 
 C Resources:
@@ -36,5 +38,6 @@ https://en.wikipedia.org/wiki/Offset_(computer_science)
 https://en.wikipedia.org/wiki/Relocation_(computing)
 https://en.wikipedia.org/wiki/Memory_address#absolute_address
 https://en.wikipedia.org/wiki/Data_segment
+https://www.geeksforgeeks.org/data-structures/
 
 

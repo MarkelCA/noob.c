@@ -1,6 +1,7 @@
 #include <stdio.h>
 
     int g1;
+    int g2 = 2;
 int main()
 {
     int i1;
@@ -21,20 +22,21 @@ int main()
     struct Point p1;
     struct Point p2;
 
-    printf("Pointer of point 2:  %p\tStack\n", &p2); // Stack
-    printf("Pointer of point 1:  %p\tStack\n", &p1); // Stack
+    printf("Point 2:          %p\tStack\n", &p2); // Stack
+    printf("Point 1:          %p\tStack\n", &p1); // Stack
 
-    printf("\nPointer of int 2:    %p\tStack\n", &i2); // Stack
-    printf("Pointer of int 1:    %p\tStack\n", &i1); // Stack
+    printf("\nInt 2:            %p\tStack\n", &i2); // Stack
+    printf("Int 1:            %p\tStack\n", &i1); // Stack
 
-    printf("\nPointer of h1:       %p\tHeap\n", &h1); // Heap
-    printf("Pointer of h2:       %p\tHeap\n", &h2); // Heap
-    printf("Pointer of h3:       %p\tHeap\n", &h3); // Heap
+    printf("\nPointer of h1:    %p\tHeap\n", &h1); // Heap
+    printf("Pointer of h2:    %p\tHeap\n", &h2); // Heap
+    printf("Pointer of h3:    %p\tHeap\n", &h3); // Heap
 
-    printf("\nPointer of global 1: %p\tBSS\n", &g1); // Unitialized (BSS)
-    printf("Pointer of static 1: %p\tBSS\n", &s1); // Unitialized (BSS)
+    printf("\nGlobal 1:         %p\tBSS\n", &g1); // Unitialized (BSS)
+    printf("Static 1:         %p\tBSS\n", &s1); // Unitialized (BSS)
 
-    printf("\nPointer of static 2: %p\tData\n", &s2); // Initialized
+    printf("\nStatic 2:         %p\tData\n", &s2); // Initialized
+    printf("Global 2:         %p\tData\n", &g2); // Initialized
 
     puts("\nConclusion:\n------------------------");
     puts("Stack:");

@@ -11,7 +11,7 @@ When a computer program requests blocks of memory from the computer system, the 
 
 Relocation(computing):
 https://en.wikipedia.org/wiki/Relocation_(computing)
-Relocation is the process of assigning load addresses for position-dependent code and data of a program and adjusting the code and data to reflect the assigned addresses. Prior to the advent of multiprocess systems the addresses for objects were absolute, starting at a known location (often zero). Since multiprocessing systems dynamically link and switch between programs it became necessary to be able to relocate objects using position-independent code. A linker usually performs relocation in conjunction with symbol resolution 
+Relocation is the process of assigning load addresses for position-dependent code and data of a program and adjusting the code and data to reflect the assigned addresses. Prior to the advent of multiprocess systems the addresses for objects were absolute, starting at a known location (often zero). Since multiprocessing systems dynamically link animplified Wrapper and Interface Generator es una herramienta de software de código abierto utilizada para conectar programas de computadora o bibliotecas escritas en C o C ++ con lenguajes de scriptd switch between programs it became necessary to be able to relocate objects using position-independent code. A linker usually performs relocation in conjunction with symbol resolution 
 
 Linker:
 https://en.wikipedia.org/wiki/Linker_(computing)
@@ -75,6 +75,11 @@ Process isolation is a set of different hardware and software technologies desig
 Thread(computing):
 https://en.wikipedia.org/wiki/Thread_(computing)
 Is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system. The implementation of threads and processes differs between operating systems, but in most cases a thread is a component of a process. Multiple threads can exist within one process, executing concurrently and sharing resources such as memory, while different processes do not share these resources. In particular, the threads of a process share its executable code and the values of its dynamically allocated variables and non-thread-local global variables at any given time.
+
+Data Structures
+-----------------------------
+Doubly vs Single linked lists: Singly linked list are generally used for implementation of stacks. On other hand doubly linked list can be used to implement stacks as well as heaps and binary trees.
+
 
 Algorithms:
 -----------------------------

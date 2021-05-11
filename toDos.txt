@@ -61,7 +61,10 @@ Resources:
 Resources:
 3.1 Create and display a Linked List in C: https://www.youtube.com/watch?v=7Fz7JSvlr9g&t=45s
 3.2 Singly and Doubly Linked lists implementation in C: https://www.youtube.com/watch?v=RCHGco2NvMk&t=272s
-
+3.3 Modify contents of a Linked List: https://www.geeksforgeeks.org/modify-contents-linked-list/
+3.4 Doubly linked list: https://www.geeksforgeeks.org/doubly-linked-list/
+3.4 Double vs Single Linked List: https://www.tutorialspoint.com/difference-between-singly-linked-list-and-doubly-linked-list-in-java#:~:text=Both%20Singly%20linked%20list%20and,link%20to%20the%20previous%20node.
+3.5 Find the middle of a Linked List: https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/?ref=leftbar-rightbar
 
 4. Algorithms
 -----------------------------

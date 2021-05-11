@@ -18,33 +18,49 @@ int main() {
     return 0;
 }
 void app() {
-    int n = 0;
-    puts("How many elements does your list have: ");
-    scanf("%d", &n);
-    node * HEAD = createLinkedList(n);
-    displayList(HEAD);
-
-
     while (1) {
-        int elem = 0;
-        int index = 0;
-        fputs("\nInsert one element please: ", stdout);
-        scanf("%d", &elem);
-        fputs("\nIndex one element please: ", stdout);
-        scanf("%d", &index);
+        int n = 0;
+        puts("\nHow many elements does your list have: ");
+        scanf("%d", &n);
 
-        HEAD->add(HEAD, index, elem);
-        printf("HEAD: %d\n", HEAD->data);
-        printf("%p\n",HEAD);
-        puts("");
+        if (n <= 0 ){
+            printf("\nNumbers below or equal 0 are not valid");
+            continue;
+        }
+
+        node * HEAD = createLinkedList(n);
         displayList(HEAD);
+
+        while (1) {
+
+            printf("\n%p",HEAD);
+
+            int elem = 0;
+            int index = 0;
+
+            fputs("\nInsert one element please: ", stdout);
+            scanf("%d", &elem);
+
+            fputs("\nIndex one element please: ", stdout);
+            scanf("%d", &index);
+
+            printf("%p\n",HEAD);
+            HEAD->add(HEAD, index, elem);
+
+            puts("");
+            displayList(HEAD);
+
+            printf("\n%p",HEAD);
+        }
     }
 }
 node * createLinkedList(int length)
 {
+
     node * head = NULL;
     node * new = NULL;
     node * p = NULL;
+
 
     for (int i = 0 ; i < length ; i++) {
 
@@ -64,6 +80,7 @@ node * createLinkedList(int length)
         }
 
     }
+    
     head->add = add_at;
     return head;
 }
@@ -75,33 +92,40 @@ void displayList(node * list){
             p = p->next;
 
         }
-        
 }
+void remove_at(struct Node * head, int pos, int data) {
+    //header
+    node * temp = malloc(sizeof(node));
+    temp = head->next; 
+
+    *head = *temp;
+}
+
+    
 void add_at(struct Node * head, int pos, int data) 
 {
     node * new = (node*)malloc(sizeof(node));
+    node * temp = malloc(sizeof(node));
     new->data = data;
     new->next = NULL;
 
-    if (!head) {
-        head = new;
-        return;
-    }
+    if(!pos)
+   {
+        new->next = malloc(sizeof(node));
+        *new->next = *head; 
+        *head = *new;
+       
+        printf("%p\n",head);
+
+       return;
+   }
 
     // Only if it's not empty
     int count = 0;
     node * p = head;
-    node * temp = NULL;
+    /*temp = NULL;*/
 
     printf("%p\n\n",head);
-    if (pos == 0) {
-        temp = head;
-        new->next = temp;
-        head = new;
-        printf("\n%p\n",head);
-        printf("%d\n",temp->next->data);
-        printf("%d\n",new->data);
-    }
     printf("\n%p\n",head);
 
     while (p) 
@@ -125,5 +149,5 @@ void add_at(struct Node * head, int pos, int data)
         p = p->next;
         count++;
     }
-
 }
+

@@ -53,8 +53,11 @@ Resources:
 
 3. Data structures
 -----------------------------
-[X] Linked list (add value)
-[/] Linked list (change head)
+[X] Linked list
+[X] Linked list append
+[X] Linked list preppend
+[X] Linked list (change head)
+[X] Double Linkedlist
 [ ] Linked list (remove by index)
 [ ] Linked list (remove by value)
 

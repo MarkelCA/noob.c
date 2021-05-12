@@ -15,6 +15,7 @@
 [X] Constructors in C
 [/] Variable length string input 
 [/] Data Structures: https://www.geeksforgeeks.org/data-structures/
+[ ] Polymorphism: https://stackoverflow.com/questions/8194250/polymorphism-in-c
 [ ] Study memory management and deallocation
 
 Resources:

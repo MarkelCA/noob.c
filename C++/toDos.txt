@@ -2,12 +2,24 @@
 [/]........In process / Not finished
 [ ]........To do
 
+0. Fun Facts
+---------------------------------
+Templates: Java's Arraylist is one example of templating and generic types
+
+
 1. C++ programming
 ---------------------------------
+[X] Structures
+[X] Constructor and destructor
+[X] Templates
 [/] Initializer List
 [/] Initializer List vs Constructor
-[ ] Templates
+[ ] Memory Management
 
 Resources:
+
 1.1 Initializer list vs Constructor: https://www.geeksforgeeks.org/when-do-we-use-initializer-list-in-c/
+1.3 Templates: https://www.geeksforgeeks.org/templates-cpp/
 1.1 Templates: https://codingornot.com/cc-plantillas-templates-en-c
+1.2 Modern Memory Management: https://www.youtube.com/watch?v=vvgKqoKa8Mg&t=401s
+1.3 All Operators: https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B

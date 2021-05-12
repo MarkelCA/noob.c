@@ -12,10 +12,10 @@
 [X] Dinamic length array: https://www.geeksforgeeks.org/variable-length-arrays-in-c-and-c/ 
 [X] Memory Layout of C Program: https://www.geeksforgeeks.org/memory-layout-of-c-program/
 [X] Command line arguments validation and iteration
+[X] Constructors in C
 [/] Variable length string input 
 [/] Data Structures: https://www.geeksforgeeks.org/data-structures/
 [ ] Study memory management and deallocation
-[ ] Constructors in C
 
 Resources:
 
@@ -27,6 +27,7 @@ Resources:
 1.6 https://www.youtube.com/watch?v=2HasEQe5VR0
 1.7 Unknow length string input: https://stackoverflow.com/questions/16870485/how-can-i-read-an-input-string-of-unknown-length
 1.8 Strings: https://www.programiz.com/c-programming/c-strings
+1.9 All Operators: https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B
 
 
 2. Fundamentals: Memory management in computer science
@@ -89,5 +90,5 @@ Resources:
 4.7 Rotation of arrays (Index): https://www.geeksforgeeks.org/array-data-structure/#rotation
 4.8 Rotation of arays: https://www.geeksforgeeks.org/array-rotation/
 4.9 Quick sort: https://www.studytonight.com/data-structures/quick-sort
-4.10 Tipes of notation
-https://www.geogebra.org/graphing?lang=es
+4.10 Tipes of notation: https://beginnersbook.com/2018/10/ds-asymptotic-notation/
+4.11 Graphic reresentation of equations: https://www.geogebra.org/graphing?lang=es

@@ -1,0 +1,13 @@
+[X]........Made
+[/]........In process / Not finished
+[ ]........To do
+
+1. C++ programming
+---------------------------------
+[/] Initializer List
+[/] Initializer List vs Constructor
+[ ] Templates
+
+Resources:
+1.1 Initializer list vs Constructor: https://www.geeksforgeeks.org/when-do-we-use-initializer-list-in-c/
+1.1 Templates: https://codingornot.com/cc-plantillas-templates-en-c

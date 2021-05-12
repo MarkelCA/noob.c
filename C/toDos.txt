@@ -15,6 +15,7 @@
 [/] Variable length string input 
 [/] Data Structures: https://www.geeksforgeeks.org/data-structures/
 [ ] Study memory management and deallocation
+[ ] Constructors in C
 
 Resources:
 

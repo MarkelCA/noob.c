@@ -2,11 +2,6 @@
 [/]........In process / Not finished
 [ ]........To do
 
-0. Fun Facts
----------------------------------
-Templates: Java's Arraylist is one example of templating and generic types
-
-
 1. C++ programming
 ---------------------------------
 [X] Structures

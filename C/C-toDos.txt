@@ -17,9 +17,11 @@
 [X] Memory Layout of C Program: https://www.geeksforgeeks.org/memory-layout-of-c-program/
 [X] Command line arguments validation and iteration
 [X] Constructors in C
+[X] Stack Overflow vs Heap Overflow
 [/] Variable length string input 
 [/] Data Structures: https://www.geeksforgeeks.org/data-structures/
 [ ] Polymorphism: https://stackoverflow.com/questions/8194250/polymorphism-in-c
+[ ] Try to see if allocating stack variables changes adresses of already declarated stack variables
 [ ] Study memory management and deallocation
 
 Resources:
@@ -33,6 +35,8 @@ Resources:
 1.7 Unknow length string input: https://stackoverflow.com/questions/16870485/how-can-i-read-an-input-string-of-unknown-length
 1.8 Strings: https://www.programiz.com/c-programming/c-strings
 1.9 All Operators: https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B
+1.10 Stack Overflow vs Heap Overflow in C: https://www.tutorialspoint.com/heap-overflow-and-stack-overflow-in-c
+1.11 Heap Overflow and Stack Overflow: https://www.geeksforgeeks.org/heap-overflow-stack-overflow/
 
 
 2. Data structures

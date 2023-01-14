@@ -1,0 +1,64 @@
+cmake_minimum_required(VERSION 3.22)
+project(noob_c)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(C++/Intermediate/DesignPatterns/ExplicitConstructors)
+include_directories(C++/Intermediate/DesignPatterns/InterfaceInheritance)
+
+add_executable(noob_c
+        C/Advanced/Algorithms/quick-sort.c
+        C/Advanced/Data-structures/linked-lists/linked-list.c
+        C/Advanced/Data-structures/linked-lists/linked-list2.c
+        C/Advanced/Data-structures/linked-lists/ll-insertions.c
+        C/Advanced/Data-structures/linked-lists/ll-modify-contents.c
+        C/Basic/arrays/array-rotation.c
+        C/Basic/arrays/array-vs-pointer.c
+        C/Basic/arrays/iterate-array.c
+        C/Basic/data-types/data-types.c
+        C/Basic/data-types/type-sizes.c
+        C/Basic/Strings/buffer.c
+        C/Basic/Strings/dinamic-string.c
+        C/Basic/Strings/string-concat.c
+        C/Basic/Strings/stringizi.c
+        C/Basic/Strings/strings.c
+        C/Basic/command-arguments.c
+        C/Basic/hello-world.c
+        C/Basic/puts-vs-printf.c
+        C/Intermediate/Memory/malloc-array-in-function.c
+        C/Intermediate/Memory/malloc.c
+        C/Intermediate/Memory/stack-vs-heap.c
+        C/Intermediate/Memory/stackOverflow.c
+        C/Intermediate/Structures/Constructors/C-constructor.c
+        C/Intermediate/Structures/array-structure.c
+        C/Intermediate/Structures/structure-pointer.c
+        C/Intermediate/Structures/structures.c
+        C++/Basic/Arrays/array-iteration.cpp
+        C++/Basic/Arrays/array-library.cpp
+        C++/Basic/Arrays/matrix.cpp
+        C++/Basic/Arrays/vectors.cpp
+        C++/Basic/hello-world.cpp
+        C++/Basic/pointers.cpp
+        C++/Basic/References.cpp
+        C++/Basic/references.cpp
+        C++/Basic/type-sizes.cpp
+        C++/Intermediate/Classes/classes-access.cpp
+        C++/Intermediate/Classes/classes-constructor.cpp
+        C++/Intermediate/Classes/classes-destructor.cpp
+        C++/Intermediate/Classes/classes-functions.cpp
+        C++/Intermediate/Classes/destructors.cpp
+        C++/Intermediate/DesignPatterns/ExplicitConstructors/Printer.cpp
+        C++/Intermediate/DesignPatterns/ExplicitConstructors/Printer.h
+        C++/Intermediate/DesignPatterns/InterfaceInheritance/Person.h
+        C++/Intermediate/DesignPatterns/InterfaceInheritance/Student.h
+        C++/Intermediate/DesignPatterns/InterfaceInheritance/Talks.h
+        C++/Intermediate/DesignPatterns/main.cpp
+        C++/Intermediate/Memory/memory-management.cpp
+        C++/Intermediate/Templates/multiple-param-template.cpp
+        C++/Intermediate/Templates/template-arrayClass.cpp
+        C++/Intermediate/Templates/template-bubbleSort.cpp
+        C++/Intermediate/Templates/template-specialization.cpp
+        C++/Intermediate/Templates/templates.cpp
+        C++/Project/sudoku.cpp
+        C++/structures.cpp
+        C++/template.cpp)

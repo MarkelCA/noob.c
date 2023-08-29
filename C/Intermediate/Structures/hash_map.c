@@ -4,17 +4,13 @@
 
 #define HASH_TABLE_SIZE 100
 
-typedef struct KeyValue {
+typedef struct HashMap {
     char *key;
     char *value;
-    struct KeyValue *next;
-} KeyValue;
-
-typedef struct {
-    KeyValue *buckets[HASH_TABLE_SIZE];
+    struct HashMap *next;
 } HashMap;
 
-unsigned int hashFunction(const char *key) {
+unsigned int hash_function(const char *key) {
     unsigned int hash = 0;
     while (*key) {
         hash = (hash << 5) + *key++;
@@ -22,32 +18,32 @@ unsigned int hashFunction(const char *key) {
     return hash % HASH_TABLE_SIZE;
 }
 
-KeyValue *createKeyValue(const char *key, const char *value) {
-    KeyValue *kv = (KeyValue *)malloc(sizeof(KeyValue));
-    kv->key = strdup(key);
-    kv->value = strdup(value);
-    kv->next = NULL;
-    return kv;
+HashMap *create_hash_map(const char *key, const char *value) {
+    HashMap *hm = (HashMap *)malloc(sizeof(HashMap));
+    hm->key = strdup(key);
+    hm->value = strdup(value);
+    hm->next = NULL;
+    return hm;
 }
 
-void insertKeyValue(HashMap *map, const char *key, const char *value) {
-    unsigned int index = hashFunction(key);
-    KeyValue *kv = createKeyValue(key, value);
+void insert_hash_map(HashMap *buckets[], const char *key, const char *value) {
+    unsigned int index = hash_function(key);
+    HashMap *hm = create_hash_map(key, value);
 
-    if (map->buckets[index] == NULL) {
-        map->buckets[index] = kv;
+    if (buckets[index] == NULL) {
+        buckets[index] = hm;
     } else {
-        KeyValue *current = map->buckets[index];
+        HashMap *current = buckets[index];
         while (current->next != NULL) {
             current = current->next;
         }
-        current->next = kv;
+        current->next = hm;
     }
 }
 
-const char *getValue(HashMap *map, const char *key) {
-    unsigned int index = hashFunction(key);
-    KeyValue *current = map->buckets[index];
+const char *get_value(HashMap *buckets[], const char *key) {
+    unsigned int index = hash_function(key);
+    HashMap *current = buckets[index];
 
     while (current != NULL) {
         if (strcmp(current->key, key) == 0) {
@@ -59,11 +55,11 @@ const char *getValue(HashMap *map, const char *key) {
     return NULL;
 }
 
-void freeHashMap(HashMap *map) {
+void free_hash_map(HashMap *buckets[]) {
     for (int i = 0; i < HASH_TABLE_SIZE; i++) {
-        KeyValue *current = map->buckets[i];
+        HashMap *current = buckets[i];
         while (current != NULL) {
-            KeyValue *temp = current;
+            HashMap *temp = current;
             current = current->next;
             free(temp->key);
             free(temp->value);
@@ -73,18 +69,17 @@ void freeHashMap(HashMap *map) {
 }
 
 int main() {
-    HashMap myMap;
-    memset(&myMap, 0, sizeof(HashMap));
+    HashMap *hash_map[HASH_TABLE_SIZE] = { NULL };
 
-    insertKeyValue(&myMap, "name", "John");
-    insertKeyValue(&myMap, "age", "30");
-    insertKeyValue(&myMap, "city", "New York");
+    insert_hash_map(hash_map, "foo", "bar");
+    insert_hash_map(hash_map, "fizz", "buzz");
+    insert_hash_map(hash_map, "x", "y");
 
-    printf("Name: %s\n", getValue(&myMap, "name"));
-    printf("Age: %s\n", getValue(&myMap, "age"));
-    printf("City: %s\n", getValue(&myMap, "city"));
+    printf("foo: %s\n", get_value(hash_map, "foo"));
+    printf("fizz: %s\n", get_value(hash_map, "fizz"));
+    printf("x: %s\n", get_value(hash_map, "x"));
 
-    freeHashMap(&myMap);
+    free_hash_map(hash_map);
 
     return 0;
 }
